@@ -4,9 +4,9 @@
 
 char serverAddress[] = "https://api.tago.io/data";  // TagoIO address
 char contentHeader[] = "application/json";
-char tokenHeader[] = "227b8733-c9ae-4c74-8e07-520829f6c3fb"; // TagoIO Token
-const char wifiSsid[] = "nobody 3.0";
-const char wifiPass[] = "milokzin";
+char tokenHeader[] = "TOKEN"; // TagoIO Token
+const char wifiSsid[] = " ";  // WiFi Name
+const char wifiPass[] = " ";  //WiFi Password
 
 WiFiClient wifia;
 HTTPClient client;
@@ -14,9 +14,9 @@ int status = WL_IDLE_STATUS;
 int dhtHumidity;
 int  dhtTemperature;
 
-// DHT configuration
-#define DHTPIN 5     // Digital pin connected to the DHT sensor
-#define DHTTYPE DHT22   // DHT 22  (AM2302), AM2321
+// Configuração DHT
+#define DHTPIN 5     // Pino conectado ao DHT
+#define DHTTYPE DHT22   // Definindo o modelo do DHT
 DHT dht(DHTPIN, DHTTYPE);
 
 void init_wifi(void) {
@@ -50,10 +50,10 @@ void loop() {
     int statusCode=0;
 
   
-  float h = dhtHumidity++;
+  float h = dhtHumidity++;  // Usado para teste
   //float h = dht.readHumidity();
 
-  float t = dhtTemperature++;
+  float t = dhtTemperature++;  // Usado para teste
   //float t = dht.readTemperature();
 
   send_temperature();

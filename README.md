@@ -16,4 +16,4 @@ Ano: 2023
    - Sensor DHT
 
 ## Video Explicativo
-   - https://www.youtube.com/watch?v=4wCJe6NC5R4
+   - https://youtu.be/1uNebUmqSHY

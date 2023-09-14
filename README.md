@@ -1,6 +1,6 @@
 ## Sensor Temperatura e Umidade ESP32
 
-##Integrantes
+## Integrantes
  - Márcio Gastaldi - RM98811
  - Arthur Bessa Pian-RM99215
  - Davi Desenzi - RM550849
